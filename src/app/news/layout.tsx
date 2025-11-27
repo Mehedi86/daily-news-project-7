@@ -3,6 +3,7 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { FiActivity, FiCpu, FiMapPin } from "react-icons/fi";
 
 export default function NewsLayout({ children }: { children: React.ReactNode }) {
   const [open, setOpen] = useState(false);
@@ -10,20 +11,22 @@ export default function NewsLayout({ children }: { children: React.ReactNode }) 
   const navItem = (
     <nav className="space-y-2">
       {[
-        { href: "/news/sports", label: "Sports" },
-        { href: "/news/tech", label: "Tech" },
-        { href: "/news/local", label: "Local" },
+        { href: "/news/sports", label: "Sports", icon: <FiActivity size={12} /> },
+        { href: "/news/tech", label: "Tech", icon: <FiCpu size={12} /> },
+        { href: "/news/local", label: "Local", icon: <FiMapPin size={12} /> },
       ].map((item) => (
         <Link
           key={item.href}
           href={item.href}
           className="
-            block px-3 py-2 rounded-lg font-medium
-            text-neutral-700 hover:text-blue-700
-            hover:bg-blue-100 transition-all
-            shadow-sm hover:shadow
-          "
+        flex items-center gap-2
+        px-3 py-1 rounded font-medium
+        text-neutral-700 hover:text-blue-700
+        hover:bg-blue-100 transition-all
+        shadow-sm hover:shadow
+      "
         >
+          {item.icon}
           {item.label}
         </Link>
       ))}
