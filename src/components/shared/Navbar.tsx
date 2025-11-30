@@ -33,6 +33,11 @@ export default function Navbar() {
                                 News
                             </NavigationMenuLink>
                         </NavigationMenuItem>
+                        <NavigationMenuItem>
+                            <NavigationMenuLink href="/counter">
+                                Counter
+                            </NavigationMenuLink>
+                        </NavigationMenuItem>
 
                         {/* dropdown item */}
                         <NavigationMenuItem>
