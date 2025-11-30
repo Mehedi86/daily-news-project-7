@@ -65,14 +65,13 @@ export default function Navbar() {
 
                         {/* simple links */}
                         <NavigationMenuItem>
-                            <NavigationMenuLink href="/about">
-                                About
+                            <NavigationMenuLink href="/posts">
+                                Posts
                             </NavigationMenuLink>
                         </NavigationMenuItem>
-
                         <NavigationMenuItem>
-                            <NavigationMenuLink href="/contact">
-                                Contact
+                            <NavigationMenuLink href="/comments">
+                                Comments
                             </NavigationMenuLink>
                         </NavigationMenuItem>
                     </NavigationMenuList>
@@ -86,8 +85,8 @@ export default function Navbar() {
                 </div>
                 {/* mobile hamburger menu */}
                 <div className="lg:hidden">
-                    <Button 
-                    variant={"outline"}>
+                    <Button
+                        variant={"outline"}>
                         <RiMenu2Line />
                     </Button>
                 </div>
