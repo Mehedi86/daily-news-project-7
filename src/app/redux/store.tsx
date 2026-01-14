@@ -3,11 +3,14 @@ import counterReducer from "../counter/counterSlice";
 import postsReducer from "../posts/postsSlice";
 import commentsReducer from "../comments/commentsSlice";
 
+import informationReducer from "../information/informationSlice"
+
 export const store = configureStore({
   reducer: {
     counters: counterReducer,
     posts: postsReducer,
-    comments: commentsReducer
+    comments: commentsReducer,
+    information: informationReducer
   },
 });
 

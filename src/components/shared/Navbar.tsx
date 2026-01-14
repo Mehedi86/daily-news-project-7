@@ -74,6 +74,16 @@ export default function Navbar() {
                                 Comments
                             </NavigationMenuLink>
                         </NavigationMenuItem>
+                        <NavigationMenuItem>
+                            <NavigationMenuLink href="/information">
+                                Collect Information
+                            </NavigationMenuLink>
+                        </NavigationMenuItem>
+                        <NavigationMenuItem>
+                            <NavigationMenuLink href="/showInfo">
+                                Information
+                            </NavigationMenuLink>
+                        </NavigationMenuItem>
                     </NavigationMenuList>
                 </NavigationMenu>
 
